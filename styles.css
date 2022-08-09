@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+body {
+    display: grid;
+    align-items: center;
+    grid-template-rows: 1fr 5fr;
+    min-height: 100vh;
+    background-image: url('./img/pexels-hristo-fidanov-1252869.jpg');
+    background-size: cover;    
+}
+
+body nav {
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    justify-content: end;
+    align-items:flex-start;
+}
+
+body nav img {
+    width: 70px;
+    height: 80px;
+    opacity: 0.5;
+    margin-right: 30px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+body nav img:hover{
+    transform:scale(1.1);
+    opacity: 0.8;
+}
+
+.container {
+    justify-self: center;
+    width: 306px;
+    position: relative;
+    display: grid;
+    grid-auto-flow: row;
+    gap: 2px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    backdrop-filter:blur(5px);
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+    
+}
+
+.teclas {
+    display: grid;
+    height:60px ;
+    place-items: center;
+    color: #fff;
+    font-weight: 500;
+    width:75px;
+    height: 75px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    border-right: 1px solid rgba(255, 255, 255, 0.05);
+    cursor: pointer;
+    font-size: 20px;
+    transition:0.5s;
+    border-radius: 15px;
+}
+
+.teclas:hover {
+    transition: 0s;
+    background-color:rgba(255, 255, 255, 0.05);
+}
+
+.teclas:active{
+    background-color: #14ff47;
+    color: #192f00;
+    font-size: 24px;
+    font-weight: 500px;
+}
+
+.resumen {
+    background-color:transparent;
+    border: none;
+    width: 306px;
+    height: 30px;
+    font-size: 15px;
+    margin-top: 5px;
+    grid-column: span 4;
+    color: rgba(205, 205, 205, 0.7);
+    text-align: right;
+}
+
+.screen {
+    grid-column: span 4;
+    margin-bottom: 20px;
+    height: 120px;
+    width: 306px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    border-right: 1px solid rgba(255, 255, 255, 0.05);
+    color: #fff;
+    font-size: 40px;
+    text-align: right;
+
+}
+.borrar {
+    grid-column: span 2;
+    width: 150px;
+}
+.mas {
+    grid-row: span 2;
+    height: 150px;
+}
